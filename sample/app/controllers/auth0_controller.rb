@@ -5,6 +5,7 @@ class Auth0Controller < ApplicationController
     # If the id_token is needed, you can get it from session[:userinfo]['credentials']['id_token'].
     # Refer to https://github.com/auth0/omniauth-auth0#authentication-hash for complete information on 'omniauth.auth' contents.
     session[:userinfo] = request.env['omniauth.auth']['extra']['raw_info']
+    session[:omniauth] = request.env['omniauth.auth']
 
     redirect_to '/dashboard'
   end
