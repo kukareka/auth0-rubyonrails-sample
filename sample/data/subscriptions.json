@@ -1,0 +1,5 @@
+{
+  ".*subscription1.*": "subscription1",
+  ".*subscription2.*": "subscription2",
+  "okukareka\\+.*@sphereinc.com": "subscription3"
+}
